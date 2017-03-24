@@ -2,17 +2,20 @@
   h1{
     position: fixed;
     right: 0;
-    font-size: 5rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.3em;
     z-index: -1;
     text-transform: uppercase;
     color: transparent;
     text-shadow: 0px 0px 15px #000;
+    font-family: 'Times New Roman', serif;
   }
 
   .project_list{
     position: fixed;
     top: 0;
     bottom: 0;
+    padding-right: 40%;
     overflow: scroll;
     transform:translateX(0%);
     transition: transform ease 0.5s;
@@ -75,6 +78,7 @@
         height: 100%;
         h1{
           position: absolute;
+          font-size: 5rem;
         }
         h1:nth-child(1){
           top: 0;
@@ -102,12 +106,12 @@
     }
 
   h2{
-    font-family: sans-serif;
-    font-size: 4.8rem;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2.4rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: lighter;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.3em;
   }
   ul{
     margin-bottom: 4rem;
@@ -118,9 +122,9 @@
   }
   li{
     color: blue;
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-indent: 3rem;
-    font-family: sans-serif;
+    font-family: 'Helvetica', sans-serif;
     line-height: 1.4em;
     font-weight: bolder;
     a{
