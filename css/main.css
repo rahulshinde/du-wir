@@ -53,6 +53,121 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Alegreya', serif; }
+  font-family: serif; }
+
+#site h1 {
+  position: fixed;
+  right: 0;
+  font-size: 5rem;
+  z-index: -1;
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: 0px 0px 15px #000; }
+#site .project_list {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+  transform: translateX(0%);
+  transition: transform ease 0.5s; }
+  #site .project_list.hide {
+    transform: translateX(-50%);
+    overflow: hidden; }
+#site #slide_container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  background-color: #fff;
+  border-left: 1px solid #000;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  transition: transform ease 0.5s; }
+  #site #slide_container iframe {
+    width: 100%;
+    height: 100%; }
+  #site #slide_container.show {
+    transform: translateX(0%); }
+#site .image {
+  display: block;
+  margin: 2rem auto;
+  width: 70%;
+  box-shadow: 0.8rem 0.8rem 1rem rgba(0, 0, 0, 0.6); }
+#site #close {
+  /*color: #000;*/
+  position: fixed;
+  left: 1%;
+  top: 0;
+  bottom: 0;
+  width: 28%;
+  display: none;
+  z-index: 1000; }
+  #site #close:hover {
+    cursor: pointer;
+    /*background-color: black;*/ }
+    #site #close:hover h1 {
+      color: white; }
+  #site #close #close_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    #site #close #close_wrap h1 {
+      position: absolute; }
+    #site #close #close_wrap h1:nth-child(1) {
+      top: 0;
+      left: 0; }
+    #site #close #close_wrap h1:nth-child(2) {
+      top: 22%;
+      left: 25%; }
+    #site #close #close_wrap h1:nth-child(3) {
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%); }
+    #site #close #close_wrap h1:nth-child(4) {
+      bottom: 22%;
+      right: 25%; }
+    #site #close #close_wrap h1:nth-child(5) {
+      bottom: 0;
+      right: 0; }
+#site h2 {
+  font-family: sans-serif;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.25em; }
+#site ul {
+  margin-bottom: 4rem; }
+#site h3 {
+  text-align: center;
+  padding: 3rem 0 1rem 0; }
+#site li {
+  color: blue;
+  font-size: 2.6rem;
+  text-indent: 3rem;
+  font-family: sans-serif;
+  line-height: 1.4em;
+  font-weight: bolder; }
+  #site li a {
+    color: blue;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid transparent; }
+  #site li a:hover {
+    background-color: white;
+    border: 1px solid black; }
+#site #question {
+  position: fixed;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  z-index: -2; }
+#site img {
+  width: 80%; }
 
 /*# sourceMappingURL=main.css.map */
