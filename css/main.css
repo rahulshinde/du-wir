@@ -110,7 +110,7 @@ body {
     cursor: pointer;
     /*background-color: black;*/ }
     #site #close:hover h1 {
-      color: white; }
+      color: lime; }
   #site #close #close_wrap {
     position: relative;
     width: 100%;
@@ -139,9 +139,10 @@ body {
   font-family: 'Helvetica', sans-serif;
   font-size: 2.4rem;
   text-transform: uppercase;
+  font-style: italic;
   margin-bottom: 2rem;
   font-weight: lighter;
-  letter-spacing: 0.3em; }
+  color: lime; }
 #site ul {
   margin-bottom: 4rem; }
 #site h3 {
